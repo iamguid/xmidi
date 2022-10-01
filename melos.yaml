@@ -1,0 +1,4 @@
+name: xmidi
+
+packages:
+  - packages/**

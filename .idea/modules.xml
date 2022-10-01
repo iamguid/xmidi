@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/xmidi_player/melos_xmidi_player.iml" filepath="$PROJECT_DIR$/packages/xmidi_player/melos_xmidi_player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/xmidi_rw/melos_xmidi_rw.iml" filepath="$PROJECT_DIR$/packages/xmidi_rw/melos_xmidi_rw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/xmidi_utils/melos_xmidi_utils.iml" filepath="$PROJECT_DIR$/packages/xmidi_utils/melos_xmidi_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_xmidi.iml" filepath="$PROJECT_DIR$/melos_xmidi.iml" />
+    </modules>
+  </component>
+</project>
