@@ -1,16 +1,19 @@
-import 'package:xmidi_rw/xmidi_rw.dart';
+import 'dart:io';
+
 import 'package:test/test.dart';
+import 'package:xmidi_rw/xmidi_rw.dart';
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
+  test('reader and writer output matches', () {
+    final file = File('test/data/miditrack.mid');
 
-    setUp(() {
-      // Additional setup goes here.
-    });
+    final reader = MidiReader();
+    List<int> originalFileBuffer = file.readAsBytesSync();
+    final parsedMidi = reader.parseMidiFromBuffer(originalFileBuffer);
 
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
-    });
+    final writer = MidiWriter();
+    List<int> writtenBuffer = writer.writeMidiToBuffer(parsedMidi);
+
+    expect(originalFileBuffer, writtenBuffer);
   });
 }
