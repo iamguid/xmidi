@@ -1,6 +1,8 @@
 import 'package:xmidi_utils/xmidi_utils.dart';
 
 void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  final note = MidiUtils.midiToNote(12);
+  final midi = MidiUtils.noteToMidi('C1');
+
+  print('note: $note, midi: $midi');
 }
