@@ -1,10 +1,10 @@
 name: xmidi_utils
 description: Some utility methods for MIDI. Part of xmidi project.
-version: 0.1.0
+version: 0.2.0
 homepage: https://github.com/iamguid/xmidi
 
 environment:
-  sdk: '>=2.18.0 <3.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dev_dependencies:
   lints: ^2.0.0
